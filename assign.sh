@@ -4,7 +4,6 @@
 # File: assign.sh
 # Date: 11 April 2019
 # Desc: Flow Control, Loops, and Documentation
-
 fileToCheck="test.sh"
 if [ -f "$fileToCheck" ]; then
   stat $fileToCheck --printf="Regular file %n exists and is %s bytes in size\n"
