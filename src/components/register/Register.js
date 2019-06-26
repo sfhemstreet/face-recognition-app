@@ -18,7 +18,7 @@ class Register extends React.Component{
     }
     // EMAIL
     onEmailChange = (event) => {
-        const re = new RegExp(/[a-z\d]+([._]?[a-z\d]+)+@[a-z\d]+(\.[a-z]+)+/igm)
+        const re = new RegExp(/[a-z\d]+([\.\_]?[a-z\d]+)+@[a-z\d]+(\.[a-z]+)+/igm)
         if(event.target.value.match(re)){
             this.setState({email: event.target.value});
         }
